@@ -9,7 +9,7 @@
     android:paddingLeft="24dp"
     android:paddingRight="24dp"
     android:orientation="vertical"
-    android:background="#0099cc"
+    android:background="@color/color_blueOverlay"
     >
 
 
@@ -89,7 +89,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/nota_bene"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorWhite"
         android:textSize="14sp"
         android:textStyle="italic"
         />
@@ -126,7 +126,7 @@
             android:id="@+id/tvResultado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#fff"
+            android:textColor="@color/colorWhite"
             android:textSize="18sp"
             android:textStyle="bold"
             android:text="Resultado"
