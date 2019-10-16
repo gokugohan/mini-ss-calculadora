@@ -4,6 +4,12 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="nota_bene">NB: HIli durasaun fulan wainhira serbisu liu tinan (ano completo). Px: Tinan 3 fulan 4 ou tinan 5 fulan 9. Caso serbisu pas-pas tinan 1 ou 2 ou 5, então laprecisa hili fulan número fulan serbisu.</string>
+    <string name="salario_mensal">Salário Mensal</string>
+    <string name="salario_mensal_ex">Ex: 150</string>
+    <string name="numero_tinan_serbisu">Número Tinan Serbisu</string>
+    <string name="numero_fulan_serbisu">Número Fulan Serbisu</string>
+    <string name="calcula">Calcula</string>
+    <string name="resultado">Resultado</string>
 
     <string-array name="fulan">
         <item></item>

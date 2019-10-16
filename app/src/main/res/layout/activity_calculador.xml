@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,23 +9,25 @@
     android:paddingRight="24dp"
     android:orientation="vertical"
     android:background="@color/color_blueOverlay"
-    >
+    android:id="@+id/calculadorMainLayout">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/tvSalarioMensal"
-        android:text="Salário Mensal"
+        android:text="@string/salario_mensal"
         android:textSize="24sp"
         android:textStyle="bold"
         />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ex: 150"
+        android:hint="@string/salario_mensal_ex"
         android:textSize="24sp"
         android:id="@+id/etSalarioMensal"
+        android:inputType="numberDecimal"
+        android:importantForAutofill="no"
         />
 
     <View
@@ -39,7 +40,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Número Tinan Serbisu"
+        android:text="@string/numero_tinan_serbisu"
         android:textSize="24sp"
         android:textStyle="bold"
         />
@@ -64,7 +65,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Número Fulan Serbisu"
+        android:text="@string/numero_fulan_serbisu"
         android:textSize="24sp"
         android:textStyle="bold"
         />
@@ -97,21 +98,13 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calcula"
+        android:text="@string/calcula"
         android:id="@+id/btnCalculaValor"
         android:background="@color/black_overlay"
         style="?metaButtonBarButtonStyle"
         android:layout_marginTop="24dp"
         android:textColor="#fff"
         android:textSize="20sp"
-        />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="#fff"
         />
 
 
@@ -122,6 +115,14 @@
         android:orientation="vertical"
         android:visibility="gone"
         >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#fff"
+            />
+
         <TextView
             android:id="@+id/tvResultado"
             android:layout_width="match_parent"
@@ -129,7 +130,7 @@
             android:textColor="@color/colorWhite"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:text="Resultado"
+            android:text="@string/resultado"
             />
 
     </LinearLayout>
